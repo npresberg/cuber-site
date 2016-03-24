@@ -370,12 +370,46 @@ header .header-content .header-content-inner p {
 	} 
 
 	#beneficios li{
+		padding-bottom: 10px;
 
 	}
 
 	#beneficios h3{
 		padding-bottom: 30px;
 	}
+
+/* BVenta o Alquiler */
+
+#ventaoalquiler {
+	background-color: #B10052;
+	background-size: 100%;
+
+}
+
+	#ventaoalquiler h3{
+		color: #fff;
+		text-align: center;
+	}
+
+	#ventaoalquiler h4{
+		color: #fff;
+		text-align: center;
+	}
+
+	#ventaoalquiler p{
+		text-align: justify;
+	}
+
+#sponsoring {
+	background-color: #790032;
+	background-size: 100%;
+
+}
+
+	#sponsoring h3{
+		color: #fff;
+		text-align: center;
+	}	
 
 
 
