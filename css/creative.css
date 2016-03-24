@@ -367,18 +367,34 @@ header .header-content .header-content-inner p {
 	
 	#beneficios ul{
 		margin: 0 auto;
+		width: 520px;
+		list-style: none;
+		padding:0;
 	} 
 
-	#beneficios li{
+	#beneficios li {
 		padding-bottom: 10px;
+		position: relative;
+		padding-left: 30px;
+	}
 
+	#beneficios li:before {
+		content: "";
+		background: url(/img/tabulador.png) no-repeat;
+	    width: 18px;
+	    height: 21px;
+	    display: inline-block;
+	    background-size: contain;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
 	}
 
 	#beneficios h3{
 		padding-bottom: 30px;
 	}
 
-/* BVenta o Alquiler */
+/* Venta o Alquiler */
 
 #ventaoalquiler {
 	background-color: #B10052;
@@ -400,10 +416,22 @@ header .header-content .header-content-inner p {
 		text-align: justify;
 	}
 
+	#ventaoalquiler .divider{
+		background-color: #fff;
+		height: 230px;
+		width: 3px;
+		display: inline-block;
+    	margin-top: 110px;
+	}
+
+	#ventaoalquiler .img-responsive{
+		margin: 0 auto -230px auto;
+	}
+
 #sponsoring {
 	background-color: #790032;
 	background-size: 100%;
-
+	padding-top: 200px;
 }
 
 	#sponsoring h3{
