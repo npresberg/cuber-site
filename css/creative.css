@@ -321,11 +321,15 @@ header .header-content .header-content-inner p {
 
 #quienessomos {
 	background-color: #B10052;
-	background-image: url(/img/quienessomos-manos.png);
 	background-position: bottom;
 	background-size: 100%;
 	background-repeat: no-repeat;	
 }
+	@media(min-width:992px) {
+		#quienessomos {
+			background-image: url(/img/quienessomos-manos.png);
+		}
+	}
 
 	#quienessomos h3 {
 		color: #fff;
@@ -439,8 +443,48 @@ header .header-content .header-content-inner p {
 		text-align: center;
 	}	
 
+/* Preguntas */
+#faq {
+	background-color: #B10052;
+}
 
+	@media(min-width:992px) {
+		#faq {
+			background-image: url(/img/mano-celu.png);
+			background-position: right bottom;
+			background-repeat: no-repeat;
+		}
+	}
 
+	#faq h3{
+		color: #fff;
+		text-align: center;
+	}
+
+	#faq a{
+		color: #fff;
+	}
+
+	#faq ul{
+		list-style: none;
+		padding: 0;
+		margin-top: 50px;
+	}
+
+	#faq .preguntas a:hover,
+	#faq .preguntas a.active{
+		color: #B10052;
+		background-color: #eee;
+	}
+
+	#faq .respuestas li{
+		color: #fff;
+
+	}
+
+	#faq .respuestas h4{
+		margin-bottom: 30px;
+	}
 
 /* Service Box */
 

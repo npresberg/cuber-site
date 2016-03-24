@@ -52,4 +52,13 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
+    $('#faq a').click(function(e) {
+        var a = $(this);
+        var dest = $(this.hash);
+        a.closest('ul').find('a').removeClass('active');
+        a.addClass('active')
+        dest.removeClass('hidden').siblings().addClass('hidden');
+        return false;
+    });
+
 })(jQuery); // End of use strict
