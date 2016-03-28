@@ -341,6 +341,17 @@ header .header-content .header-content-inner p {
 	}
 
 
+/* Planes */
+
+#planes {
+	display: none;
+}
+
+/* Contacto */
+
+#contacto {
+	display: none;
+}
 
 /* Productos */
 
@@ -787,6 +798,7 @@ body {
 }
 
 /* Popups planes */
+
 
 
 .modal-content {
