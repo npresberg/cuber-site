@@ -47,7 +47,7 @@
                     <a class="page-scroll" href="#quienessomos">QUIENES SOMOS</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#productos">PRODUCTOS</a>
+                    <a class="page-scroll" href="#products">PRODUCTOS</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#ventaoalquiler">VENTA O ALQUILER</a>
@@ -93,8 +93,8 @@
     <div class="header-content">
         <img class="stretch" src="/img/quienessomos.jpg">
     </div>
-    <section>
-        <div class="container products">
+    <section id="products">
+        <div class="container">
             <div class="row text-center">
                 <h3 class="pink">PRODUCTOS</h3>
             </div>
@@ -103,14 +103,72 @@
                     <div class="service-box">
                         <h4>TANGO LITE</h4>
                         <a><img src="/img/tango-lite.jpg" class="portfolio-box"></a>
-                        <a href="#" target="_blank" class="btn btn-productos portfolio-box">VER MÁS</a>
+                        <a href="#" class="btn btn-productos portfolio-box" data-toggle="modal" data-target="#tango-lite-popup">VER MÁS</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-box">
                         <h4>TANGO</h4>
                         <a><img src="/img/tango.jpg" class="portfolio-box"></a>
-                        <a href="#" target="_blank" class="btn btn-productos portfolio-box">VER MÁS</a>
+                        <a href="#" class="btn btn-productos portfolio-box" data-toggle="modal" data-target="#tango-popup">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  POPUP TANGO LITE  -->
+        <div id="tango-lite-popup" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h3 class="modal-title">PRODUCTOS</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 text-center">
+                                <h4>TANGO LITE</h4>
+                                <img src="/img/tango-lite.jpg" class="portfolio-box">
+                                <button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+                            </div>
+                            <div class="col-md-6">
+                                <p>La Tango Lite es un cargador de móviles para bares, restaurantes, cafeterías, zonas de ocio y demás establecimientos que integra 4 salidas USB de carga rápida.</p>
+                                <p>El cargador es ideal para colocar en mesas, barra o repisas de zonas de restauración por ser también un soporte publicitario en el punto de venta (PLV).</p>
+                                <p>El sistema es sencillo el cliente tan solo tendrá que conectar su dispositivo a la Tango Lite con un cable y así recibirá carga. Tango Lite tiene una capacidad de recarga completa de 7 iPhones 6 cuando su batería de 10.000 mAh está cargada al 100%. Además el dispositivo incluye leds de estado de batería.</p>
+                                <p>El producto Tango Lite ofrece carga sin tener que estar conectado a una fuente de alimentación. Es un servicio ideal para ofrecer a los clientes de manera cómoda en mesa y sin que tengan que abandonar el establecimiento para recargar sus dispositivos. Todo con un sistema sencillo y de diseño que sirve también como soporte publicitario para el establecimiento o para marcas.</p>
+                            </div>
+                        <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  POPUP TANGO -->
+        <div id="tango-popup" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h3 class="modal-title">PRODUCTOS</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 text-center">
+                                <h4>TANGO</h4>
+                                <img src="/img/tango.jpg" class="portfolio-box">
+                                <button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+                            </div>
+                            <div class="col-md-6">
+                                <p>La Tango es un cargador de móviles para hostelería, restauración y zonas de ocio que integra 4 salidas de carga rápida USB y un soporte de iluminación para publicidad (backlight).</p>
+                                <p>Este tipo de cargadores para restaurantes son perfectos para colocar en mesas, barra o repisas de zonas de restauración y de ocio como bares, pubs, discotecas, áreas de descanso, etc.</p>
+                                <p>Es un servicio innovador para ofrecer carga a los clientes de manera cómoda en mesa y sin que tengan que abandonar el establecimiento. Tango ofrece carga sin tener que estar conectado a una fuente de alimentación.</p>
+                                <p>El sistema es sencillo el cliente tan solo tendrá que conectar su dispositivo a la Tango con un cable y encender el cargador Tango para recibir cargar. Tango tiene una capacidad de recarga completa de 7 iPhones6 cuando su batería de 10.000 mAh está cargada al 100%. Además el dispositivo incluye una pantalla de estado de carga de batería</p>
+                            </div>
+                        <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,120 +273,16 @@
         </div>
         </div>
     </section>
-    <section class="no-padding" id="planes">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#running-popup">
-                        <img src="/img/planes/running.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption caption1">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">Running</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#stretching-popup">
-                        <img src="/img/planes/stretching.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption caption2">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">Stretching</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#funcional-popup">
-                        <img src="/img/planes/funcional.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption caption3">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">Entrenamiento Funcional</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#ritmolatino-popup">
-                        <img src="/img/planes/latinos.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption caption4">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">Ritmo Latino</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="running-popup">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-image:url(/img/planes/running.jpg)">
-                        <h2>Running</h2>
-                        <hr>
-                    </div>
-                    <p class="modal-body text-faded">Esta actividad aeróbica es la más importante del momento, se practica a nivel mundial, se desarrolla generalmente en forma masiva, en grandes circuitos, favoreciendo la integridad de quienes lo realizan y el placer de ejercitar el cuerpo al aire libre. Los objetivos se adaptan a las posibilidades de cada persona. Rápidamente se ven mejoras tanto fisicas como psicológicas.</p>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary btn-xl" data-dismiss="modal">Cerrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="stretching-popup">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-image:url(/img/planes/stretching.jpg)">
-                        <h2>Stretching</h2>
-                        <hr>
-                    </div>
-                    <p class="modal-body text-faded">Es una técnica corporal de ejercicios, basados en combinar estiramientos que fortalecen y tonifican, con otros estiramientos que relajan y distienden, algunos de ellos tomados del Hatha Yoga. Se trabaja conjuntamente con la respiración rítmica para reordenar cuerpo y mente. Se adaptan los ejercicios personalmente a cada alumno, dependiendo de sus características físicas. Es la actividad justa para descomprimir todas las presiones que recibe nuestro organismo en el día a día.</p>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary btn-xl" data-dismiss="modal">Cerrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="funcional-popup">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-image:url(/img/planes/funcional.jpg)">
-                        <h2>Entrenamiento Funcional</h2>
-                        <hr>
-                    </div>
-                    <p class="modal-body text-faded">Este tipo de entrenamiento te permite convertir las clases tradicionales en sesiones cortas, dinámicas, efectivas y entretenidas. Cualquier persona puede entrenar funcionalmente de acuerdo con sus necesidades y objetivos. De lo que se trata es de poder utilizar los movimientos de la vida diaria adaptados a un programa planificado de entrenamiento. Contribuye a mejorar la flexibilidad, la fuerza, la movilidad y equilibrio del cuerpo. Ideal para romper con la rutina diaria y liberar tensiones provocadas por el estrés.</p>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary btn-xl" data-dismiss="modal">Cerrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="ritmolatino-popup">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="background-image:url(/img/planes/latinos.jpg)">
-                        <h2>Ritmo Latino</h2>
-                        <hr>
-                    </div>
-                    <p class="modal-body text-faded">Clases grupales, dinámicas y entretenidas, donde aprenderán a distinguir cada ritmo, así como los pasos básicos de cada uno de ellos. Ritmo latino es la clase ideal para potenciar el buen estado de ánimo, estimular las relaciones sociales y liberar las tensiones que genera la rutina diaria. Además de ser una clase aeróbica, que produce un elevado gasto calórico</p>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-primary btn-xl" data-dismiss="modal">Cerrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-blue" id="contacto">
+
+    <section id="contacto">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contacto</h2>
+            	<h3 class="pink text-center">CONTACTO</h3>
+                <div class="col-lg-7 col-lg-offset-1 text-center">
                     <hr class="primary">
                     <p>Si estás interesado en incrementar la producción de tu empresa, crear un clima más agradable de trabajo y otorgarle un beneficio a tus empleados, comunicate con nosotros.</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>113-700-0678</br>Horario de Atención de 9 a 18 hs</p>
-                </div>
+               
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:info@equilibrioweb.com.ar">info@equilibrioweb.com.ar</a></p>

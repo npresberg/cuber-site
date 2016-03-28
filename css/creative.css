@@ -89,7 +89,6 @@ aside {
 
 .navbar-default {
 	font-family:'Helvetica Neue',Arial,sans-serif;
-	background-color: transparent;
 	-webkit-transition: all .35s;
 	-moz-transition: all .35s;
 	transition: all .35s;
@@ -114,7 +113,7 @@ aside {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
-	color: #fff;
+	color: #000;
 	padding: 15px 15px; 
 }
 
@@ -341,35 +340,74 @@ header .header-content .header-content-inner p {
 	}
 
 
-/* Planes */
 
-#planes {
-	display: none;
-}
 
 /* Contacto */
 
-#contacto {
-	display: none;
+#contacto h3 {
+	color: ##B10052;
+	margin-bottom: 35px;
+	text-align: center;
 }
+
 
 /* Productos */
 
-.products {
+#products {
 
 }
 
-	.products h4 {
+	#products h4 {
 		padding: 10px 35px;
 		background: grey;
 		color: white;
 		display: inline-block;
 	}
 
-	.products h3 {
+	#products h3 {
 		margin-top: 0;
 		margin-bottom: 50px;
 	}
+
+/* Popups Products */
+
+
+#products .modal-content {
+	text-align: left;
+}
+
+
+#products .modal-title {
+	text-align: center;
+	color: #B10052;
+	margin: 20px 0;
+}
+
+
+#products .modal-body {
+	background-color: #fff;
+	padding: 40px 20px 20px;
+	font-size: 13px;
+}
+
+#products .modal-footer {
+	text-align: left;
+	background-color: #fff;
+	border: none;
+}
+
+
+
+@media(max-height: 540px) {
+	.modal-header {
+		padding: 12px 15px;
+	}
+
+	.modal-body {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+}
 
 
 /* Beneficios */
@@ -385,6 +423,7 @@ header .header-content .header-content-inner p {
 		width: 520px;
 		list-style: none;
 		padding:0;
+		max-width: 100%;
 	} 
 
 	#beneficios li {
@@ -490,6 +529,7 @@ header .header-content .header-content-inner p {
 
 	#faq .respuestas li{
 		color: #fff;
+		padding: 0 17px;
 
 	}
 
@@ -795,72 +835,4 @@ img::-moz-selection {
 
 body {
 	webkit-tap-highlight-color: #222;
-}
-
-/* Popups planes */
-
-
-
-.modal-content {
-	text-align: center;
-}
-
-.modal-header {
-	color:white;
-	background-repeat: repeat-x;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	padding: 100px 15px;
-	background-position: center bottom;
-	border:none;
-}
-
-	.modal-header h2 {
-		margin: 0;
-		text-shadow: 0px 0px 5px rgba(0,0,0,.7);
-	}
-
-	.modal-header hr {
-		box-shadow: 0px 0px 5px rgba(0,0,0,.7);
-	}
-
-.modal-body {
-	color: #fff;
-	background-color: #39A935;
-	margin:0;
-	padding: 40px 20px 20px;
-	font-size: 13px;
-}
-
-.modal-footer {
-	text-align: center;
-	background-color: #39A935;
-	border: none;
-}
-
-
-@media(max-height: 540px) {
-	.modal-header {
-		padding: 12px 15px;
-		background: #39A935 !important;
-	}
-
-	.modal-body {
-		padding-top: 0;
-		padding-bottom: 10px;
-	}
-
-	.modal-header hr {
-		margin-bottom: 0;
-		box-shadow: none;
-	}
-
-	.modal-header h2 {
-		margin: 0;
-		font-size:25px;
-		text-shadow:none;
-	}
-
 }
