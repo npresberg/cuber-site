@@ -537,6 +537,29 @@ header .header-content .header-content-inner p {
 		margin-bottom: 30px;
 	}
 
+/* Contacto */
+
+#contacto .form-control {
+	width: 100%;
+}
+
+
+
+/* Footer */
+
+.footer {
+	background-color: #B10052;
+	padding:10px;
+	color: #FFF;
+	text-align: center; 
+}
+
+
+.footer a{
+	color: #FFF;
+	font-weight: bold;
+}
+
 /* Service Box */
 
 .service-box {

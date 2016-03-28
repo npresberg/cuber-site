@@ -99,7 +99,7 @@
                 <h3 class="pink">PRODUCTOS</h3>
             </div>
             <div class="row text-center">
-                <div class="col-md-4 col-md-offset-2">
+                <div class="col-md-4">
                     <div class="service-box">
                         <h4>TANGO LITE</h4>
                         <a><img src="/img/tango-lite.jpg" class="portfolio-box"></a>
@@ -110,6 +110,13 @@
                     <div class="service-box">
                         <h4>TANGO</h4>
                         <a><img src="/img/tango.jpg" class="portfolio-box"></a>
+                        <a href="#" class="btn btn-productos portfolio-box" data-toggle="modal" data-target="#tango-popup">VER MÁS</a>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="service-box">
+                        <h4>TANGO2</h4>
+                        <a><img src="/img/tango2.jpg" class="portfolio-box"></a>
                         <a href="#" class="btn btn-productos portfolio-box" data-toggle="modal" data-target="#tango-popup">VER MÁS</a>
                     </div>
                 </div>
@@ -161,6 +168,37 @@
                             </div>
                             <div class="col-md-6">
                                 <p>La Tango es un cargador de móviles para hostelería, restauración y zonas de ocio que integra 4 salidas de carga rápida USB y un soporte de iluminación para publicidad (backlight).</p>
+                                <p>Este tipo de cargadores para restaurantes son perfectos para colocar en mesas, barra o repisas de zonas de restauración y de ocio como bares, pubs, discotecas, áreas de descanso, etc.</p>
+                                <p>Es un servicio innovador para ofrecer carga a los clientes de manera cómoda en mesa y sin que tengan que abandonar el establecimiento. Tango ofrece carga sin tener que estar conectado a una fuente de alimentación.</p>
+                                <p>El sistema es sencillo el cliente tan solo tendrá que conectar su dispositivo a la Tango con un cable y encender el cargador Tango para recibir cargar. Tango tiene una capacidad de recarga completa de 7 iPhones6 cuando su batería de 10.000 mAh está cargada al 100%. Además el dispositivo incluye una pantalla de estado de carga de batería</p>
+                            </div>
+                        <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  POPUP TANGO2  -->
+        <div id="tango2-popup" class="modal fade">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                        <h3 class="modal-title">PRODUCTOS</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-5 text-center">
+                                <h4>TANGO2</h4>
+                                <img src="/img/tango2.jpg" class="portfolio-box">
+                                <button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+                            </div>
+                            <div class="col-md-6">
+                                <p>La Tango es un cargador de móviles para hostelería, restauración y zonas de ocio que integra 2 salidas de carga rápida USB y un soporte de iluminación para publicidad (backlight).</p>
                                 <p>Este tipo de cargadores para restaurantes son perfectos para colocar en mesas, barra o repisas de zonas de restauración y de ocio como bares, pubs, discotecas, áreas de descanso, etc.</p>
                                 <p>Es un servicio innovador para ofrecer carga a los clientes de manera cómoda en mesa y sin que tengan que abandonar el establecimiento. Tango ofrece carga sin tener que estar conectado a una fuente de alimentación.</p>
                                 <p>El sistema es sencillo el cliente tan solo tendrá que conectar su dispositivo a la Tango con un cable y encender el cargador Tango para recibir cargar. Tango tiene una capacidad de recarga completa de 7 iPhones6 cuando su batería de 10.000 mAh está cargada al 100%. Además el dispositivo incluye una pantalla de estado de carga de batería</p>
@@ -278,18 +316,47 @@
         <div class="container">
             <div class="row">
             	<h3 class="pink text-center">CONTACTO</h3>
-                <div class="col-lg-7 col-lg-offset-1 text-center">
-                    <hr class="primary">
-                    <p>Si estás interesado en incrementar la producción de tu empresa, crear un clima más agradable de trabajo y otorgarle un beneficio a tus empleados, comunicate con nosotros.</p>
-                </div>
-               
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:info@equilibrioweb.com.ar">info@equilibrioweb.com.ar</a></p>
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <form method="POST" action="http://e-s.herokuapp.com/form?redir=/gracias/">
+                <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="http://e-s.herokuapp.com/ping"></script>
+                <input type="hidden" name="to" value="info@cuberchargercom.ar">
+                <input type="hidden" name="token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiaG9sYUBlbGdvcnJpb25kZXBhcmlzLmNvbS5hciJ9.1bAQda9Ti3UgOFKnZsVduV10UuC3IaE7HwHbpyzS79k">
+                <input type="hidden" name="subject" value="Nuevo contacto">
+                <input type="hidden" name="page" value="/">
+                <fieldset class="row">
+                  <label class="col-md-8 col-md-offset-2"> 
+                    <input type="text" name="name" placeholder="Nombre" class="form-control">
+                  </label>
+                  <label class="col-md-8 col-md-offset-2"> 
+                    <input type="email" name="from" placeholder="E-mail" class="form-control">
+                  </label>
+                  <label class="col-md-8 col-md-offset-2"> 
+                    <input type="telefono" name="from" placeholder="Teléfono" class="form-control">
+                  </label>
+                </fieldset>
+                <fieldset class="row">
+                  <label class="col-md-8 col-md-offset-2">
+                    <textarea name="message" rows="4" placeholder="Mensaje" class="form-control"></textarea>
+                  </label>
+                </fieldset>
+                <fieldset class="row">
+                  <div class="col-md-8 col-md-offset-5">
+                    <button type="button" class="btn btn-products">ENVIAR</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+    	<div class="footer">
+				E-mail: <a href="mailto: info@cubecharger.com.ar" target="_blank">info@cubecharger.com.ar</a> &nbsp; * &nbsp; Llamanos al <a href="tel:+5491162024778">+54 9 11 6202-4778</a>&nbsp; * &nbsp; Seguínos en &nbsp;<a title="Facebook" href="https://www.facebook.com/cubecharger" target="_blank" class="facebook"><i class="de-icon-facebook-1"></i></a></div>
+    	</footer>
+
+
     <!-- jQuery -->
     <script src="/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
