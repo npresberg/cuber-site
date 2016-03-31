@@ -29,12 +29,14 @@ a {
 	-webkit-transition: all .35s;
 	-moz-transition: all .35s;
 	transition: all .35s;
+	outline: none;
 }
 
 
 
 a:hover,
 a:focus {
+	outline: none;
 	color: #B10052;
 }
 
