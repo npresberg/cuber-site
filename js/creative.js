@@ -212,5 +212,16 @@
 	// LOAD GMAP
 	google.maps.event.addDomListener(window, 'load', initialize);
 
+	// FORM
+
+	$('form').submit(function(e) {
+		var thx = $('#thanks');
+		if (thx.is(':visible')) {
+			e.preventDefault();
+		} else {
+			thx.show();
+		}
+	});
+
 })(jQuery); // End of use strict
 
