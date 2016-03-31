@@ -537,6 +537,39 @@ header .header-content .header-content-inner p {
 		margin-bottom: 30px;
 	}
 
+/* Mapa */
+
+#mapa {
+	padding: 0;
+}
+
+	#map-canvas {
+		height: 500px;
+	}
+
+	.map-icon {
+		background: url(/img/tabulador.png) no-repeat;
+		background-size: contain;
+	}
+
+	#mapa .info {
+	}
+
+		#mapa .info .logo {
+			display: inline-block;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-right: 10px;
+			width: 100px;
+			height: 65px;
+		}
+
+		#mapa .info p {
+			margin:0;
+			display: inline-block;
+		}
+
 /* Contacto */
 
 #contacto .form-control {
