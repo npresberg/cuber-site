@@ -227,7 +227,7 @@ header {
 	overflow: hidden;
 }
 
-	.header-image {
+	header .fade-item {
 		min-width: 100%;
 		min-height: 100%;
 		position: absolute;
@@ -235,13 +235,16 @@ header {
 		left: 50%;
 		transform: translateX(-50%);
 		transition: opacity 1s ease-out;
+	}
+	
+	.fade-item {
 		-ms-transition: opacity 1s ease-out;
 		-moz-transition: opacity 1s ease-out;
 		-webkit-transition: opacity 1s ease-out;
 		opacity: 0;
 	}
 
-	.header-image.show {
+	.fade-item.show {
 		opacity: 1;
 	}
 
@@ -383,39 +386,25 @@ header .header-content .header-content-inner p {
 	text-align: left;
 }
 
-
-#products .modal-title {
-	text-align: center;
-	color: #B10052;
-	margin: 20px 0;
-}
-
-
-#products .modal-body {
-	background-color: #fff;
-	padding: 40px 20px 20px;
-	font-size: 13px;
-}
-
-#products .modal-footer {
-	text-align: left;
-	background-color: #fff;
-	border: none;
-}
-
-
-
-@media(max-height: 540px) {
-	.modal-header {
-		padding: 12px 15px;
+	#products .modal-header {
+		padding: 20px;
 	}
 
-	.modal-body {
-		padding-top: 0;
-		padding-bottom: 10px;
-	}
-}
+		#products .modal-title {
+			text-align: center;
+			color: #B10052;
+			margin: 0;
+		}
 
+		#products .modal-header .close {
+		  margin-top: 4px;
+		}
+
+	#products .modal-body {
+		background-color: #fff;
+		padding: 40px 20px 20px;
+		font-size: 13px;
+	}
 
 /* Beneficios */
 

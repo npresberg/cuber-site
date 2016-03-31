@@ -63,11 +63,11 @@
 
 	// Header images
 
-	var himgs = $('.header-image');
+	var items = $('header .fade-item');
 	setInterval(function() {
-		var i = himgs.index($('.header-image.show'));
-		himgs.removeClass('show');
-		himgs.eq((i+1) % himgs.length).addClass('show');
+		var i = items.index(items.filter('.show'));
+		items.removeClass('show');
+		items.eq((i+1) % items.length).addClass('show');
 	}, 3000);
 
 	// MAP
