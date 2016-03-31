@@ -158,8 +158,14 @@
 						<div class="row">
 							<div class="col-md-5 text-center">
 								<h4>TANGO LITE</h4>
-								<img src="/img/tango-lite.jpg" class="portfolio-box">
-								<button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+								<div class="images">
+									<img src="/img/tango-lite.jpg" class="fade-item show" />
+									<img src="/img/tango-lite-2.jpg" class="fade-item" />
+									<img src="/img/tango-lite-3.jpg" class="fade-item" />
+									<div class="prev">&lt;</div>
+									<div class="next">&gt;</div>
+								</div>
+								<a class="page-scroll btn btn-primary" href="#contacto" data-dismiss="modal">QUIERO UNO!</a>
 							</div>
 							<div class="col-md-6">
 								<p>La Tango Lite es un cargador de móviles para bares, restaurantes, cafeterías, zonas de ocio y demás establecimientos que integra 4 salidas USB de carga rápida.</p>
@@ -184,8 +190,14 @@
 						<div class="row">
 							<div class="col-md-5 text-center">
 								<h4>TANGO</h4>
-								<img src="/img/tango.jpg" class="portfolio-box">
-								<button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+								<div class="images">
+									<img src="/img/tango.jpg" class="fade-item show" />
+									<img src="/img/tango-2.jpg" class="fade-item" />
+									<img src="/img/tango-3.jpg" class="fade-item" />
+									<div class="prev">&lt;</div>
+									<div class="next">&gt;</div>
+								</div>
+								<a class="page-scroll btn btn-primary" href="#contacto" data-dismiss="modal">QUIERO UNO!</a>
 							</div>
 							<div class="col-md-6">
 								<p>La Tango es un cargador de móviles para hostelería, restauración y zonas de ocio que integra 4 salidas de carga rápida USB y un soporte de iluminación para publicidad (backlight).</p>
@@ -210,8 +222,12 @@
 						<div class="row">
 							<div class="col-md-5 text-center">
 								<h4>TANGO2</h4>
-								<img src="/img/tango2.jpg" class="portfolio-box">
-								<button type="button" data-dismiss="modal" class="btn btn-primary">QUIERO UNO!</button>
+								<div class="images">
+									<img src="/img/tango2.jpg" class="fade-item show" />
+									<div class="prev">&lt;</div>
+									<div class="next">&gt;</div>
+								</div>
+								<a class="page-scroll btn btn-primary" href="#contacto" data-dismiss="modal">QUIERO UNO!</a>
 							</div>
 							<div class="col-md-6">
 								<p>La Tango es un cargador de móviles para hostelería, restauración y zonas de ocio que integra 2 salidas de carga rápida USB y un soporte de iluminación para publicidad (backlight).</p>
@@ -352,14 +368,11 @@
 			<div class="row">
 				<h3 class="pink text-center">CONTACTO</h3>
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<form method="POST" action="http://e-s.herokuapp.com/form?redir=/gracias/">
-						<script async="" src="//connect.facebook.net/en_US/fbevents.js"></script>
-						<script async="" src="//www.google-analytics.com/analytics.js"></script>
+					<form method="POST" action="http://e-s.herokuapp.com/form">
 						<!--<script type="text/javascript" src="http://e-s.herokuapp.com/ping"></script>-->
-						<input type="hidden" name="to" value="info@cuberchargercom.ar">
+						<input type="hidden" name="to" value="info@cubecharger.com.ar">
 						<input type="hidden" name="token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiaG9sYUBlbGdvcnJpb25kZXBhcmlzLmNvbS5hciJ9.1bAQda9Ti3UgOFKnZsVduV10UuC3IaE7HwHbpyzS79k">
 						<input type="hidden" name="subject" value="Nuevo contacto">
-						<input type="hidden" name="page" value="/">
 						<fieldset class="row">
 							<label class="col-md-8 col-md-offset-2">
 								<input type="text" name="name" placeholder="Nombre" class="form-control">
@@ -388,7 +401,8 @@
 	</section>
 	<footer>
 		<div class="footer">
-			E-mail: <a href="mailto:info@cubecharger.com.ar">info@cubecharger.com.ar</a> &nbsp; * &nbsp; Llamanos al <a href="tel:+5491162024778">+54 9 11 6202-4778</a>&nbsp; * &nbsp; Seguínos en &nbsp;<a title="Facebook" href="https://www.facebook.com/cubecharger" target="_blank" class="facebook"><i class="de-icon-facebook-1"></i></a></div>
+			E-mail: <a href="mailto:info@cubecharger.com.ar">info@cubecharger.com.ar</a> &nbsp; * &nbsp; Llamanos al <a href="tel:+541143721943">+54 11 4372-1943</a>&nbsp; * &nbsp; Seguínos en &nbsp;<a title="Facebook" href="https://www.facebook.com/cubecharger" target="_blank" class="facebook"><i class="de-icon-facebook-1"></i></a>
+		</div>
 	</footer>
 	<!-- jQuery -->
 	<script type="text/javascript" src="/js/jquery.js"></script>
@@ -403,7 +417,6 @@
 	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel.js"></script>
 	<!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="/js/creative.js"></script>
-
 </body>
 
 </html>

@@ -61,14 +61,27 @@
 		return false;
 	});
 
-	// Header images
+	// Generic fade slideshow
 
-	var items = $('header .fade-item');
-	setInterval(function() {
+	function step(parent, dir) {
+		var items = parent.find('.fade-item');
 		var i = items.index(items.filter('.show'));
 		items.removeClass('show');
-		items.eq((i+1) % items.length).addClass('show');
+		items.eq((i + items.length + dir) % items.length).addClass('show');
+	}
+
+	// Header images
+
+	setInterval(function() {
+		step($('header'), 1);
 	}, 3000);
+
+	// Modal slideshows
+
+	$('.modal .images').find('.prev,.next').click(function() {
+		var btn = $(this);
+		step(btn.parent(), btn.hasClass('prev') ? -1 : 1);
+	});
 
 	// MAP
 
