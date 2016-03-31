@@ -218,12 +218,6 @@ header {
 	min-height: auto;
 	text-align: center;
 	color: #fff;
-	background-position: center;
-	background-repeat: repeat-x;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
 	overflow: hidden;
 }
 
