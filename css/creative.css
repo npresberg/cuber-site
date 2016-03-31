@@ -210,6 +210,8 @@ aside {
 	}
 }
 
+/* Header */
+
 header {
 	position: relative;
 	width: 100%;
@@ -222,23 +224,26 @@ header {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	overflow: hidden;
 }
 
-#home header {
-	background-image: url(../img/header.jpg);
-}
+	.header-image {
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: opacity 1s ease-out;
+		-ms-transition: opacity 1s ease-out;
+		-moz-transition: opacity 1s ease-out;
+		-webkit-transition: opacity 1s ease-out;
+		opacity: 0;
+	}
 
-#running header {
-	background-image: url(../img/header-running.jpg);
-}
-
-#stretching header {
-	background-image: url(../img/header-stretching.jpg);
-}
-
-#funcional header {
-	background-image: url(../img/header-funcional.jpg);
-}
+	.header-image.show {
+		opacity: 1;
+	}
 
 header .header-content {
 	position: relative;

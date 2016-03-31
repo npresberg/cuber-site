@@ -61,6 +61,15 @@
 		return false;
 	});
 
+	// Header images
+
+	var himgs = $('.header-image');
+	setInterval(function() {
+		var i = himgs.index($('.header-image.show'));
+		himgs.removeClass('show');
+		himgs.eq((i+1) % himgs.length).addClass('show');
+	}, 3000);
+
 	// MAP
 
 	var config = {
