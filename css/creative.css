@@ -599,6 +599,11 @@ header .header-content .header-content-inner p {
 		background-size: contain;
 	}
 
+	#mapa .glyphicon {
+		font-size: 31px;
+		text-align: center;
+	}
+
 	#mapa .info {
 	}
 

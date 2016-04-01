@@ -108,8 +108,10 @@
 
 
 	function latlng(obj) {
-		return new google.maps.LatLng(obj.lat, obj.lon);
+		return new google.maps.LatLng(obj.lat || obj.latitude, obj.lon || obj.longitude);
 	}
+
+	var map;
 
 	//INITIALIZE MAP
 	function initialize() {
@@ -132,7 +134,7 @@
 
 		//CREATE NEW MAP
 		//=======================================================================================
-		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 		//MARKER ICON
 		//=======================================================================================
@@ -222,6 +224,35 @@
 			thx.show();
 		}
 	});
+
+	// Auto location
+
+	if (navigator.geolocation) {
+		var win = $(window).scroll(function(e) {
+			if (win.scrollTop() + win.innerHeight() >= $('#mapa').offset().top) {
+				win.unbind('scroll');
+        navigator.geolocation.getCurrentPosition(function(res) {
+        	var pos = latlng(res.coords);
+      		map.setZoom(config.clickZoom);
+					map.setCenter(pos);
+
+					var icons = config.icons;
+					new MarkerWithLabel({
+						position: pos,
+						draggable: false,
+						raiseOnDrag: false,
+						icon: ' ',
+						map: map,
+						labelContent: '<span class="glyphicon glyphicon-map-marker" style="width:'+icons.width+'px;height:'+icons.height+'px"></span>',
+						labelAnchor: new google.maps.Point(icons.width/2, icons.height/2)
+					});
+        });
+			}
+		});
+		win.scroll();
+	}
+
+	//https://maps.googleapis.com/maps/api/geocode/json?address=xxx&language=es&region=ar
 
 })(jQuery); // End of use strict
 
