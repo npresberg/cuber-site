@@ -94,9 +94,9 @@
 			height: 31
 		},
 		markers: [
-			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 1', tel:'1234567', web:'http://lugar1.com', logo:'cuber-logo.jpg'},
-			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 2', tel:'1234567', web:'http://lugar2.com', logo:'cuber-logo.jpg'},
-			{lat:-34.4667788, lon:-58.5096329, address:'Lugar 3', tel:'1234567', web:'http://lugar3.com', logo:'cuber-logo.jpg'}
+			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 1', tel:'1234567', web:'http://lugar1.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
+			,{lat:-34.4778335, lon:-58.5024091, address:'Lugar 2', tel:'1234567', web:'http://lugar2.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
+			,{lat:-34.4667788, lon:-58.5096329, address:'Lugar 3', tel:'1234567', web:'http://lugar3.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
 		]
 	};
 
@@ -174,10 +174,11 @@
 			});
 			marker.info = new google.maps.InfoWindow({
 				content: '<div class="info">'+
-					'<div class="logo" style="background-image: url(/img/'+obj.logo+')"></div>'+
+					'<div class="logo" style="background-image: url(/img/logos/'+obj.logo+')"></div>'+
 					'<p>Dirección: '+obj.address+
 					'<br/>Teléfono: '+obj.tel+
-					'<br/>Web: <a href="'+obj.web+'" target="_blank">'+obj.web+'</a></p>'+
+					'<br/>Web: <a href="'+obj.web+'" target="_blank">'+obj.web+'</a>'+
+					'<br/><a class="promo" href="/img/promos/'+obj.promo+'" target="_blank">Ver PROMO</a></p>'+
 				'</div>'
 			});
 			google.maps.event.addListener(marker, 'click', function() {
