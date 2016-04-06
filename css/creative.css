@@ -615,7 +615,7 @@ header .header-content .header-content-inner p {
 			background-size: contain;
 			margin-right: 10px;
 			width: 100px;
-			height: 65px;
+			height: 89px;
 		}
 
 		#mapa .info p {
@@ -623,11 +623,15 @@ header .header-content .header-content-inner p {
 			display: inline-block;
 		}
 
+/* Promos Popup */
+
+	#promos-popup .modal-header {
+		height: 47px;
+	}
+
 	#promos-popup img {
 		width: 100%;
 	}
-
-	#mapa
 
 /* Contacto */
 

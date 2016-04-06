@@ -94,9 +94,8 @@
 			height: 31
 		},
 		markers: [
-			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 1', tel:'1234567', web:'http://lugar1.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
-			,{lat:-34.4778335, lon:-58.5024091, address:'Lugar 2', tel:'1234567', web:'http://lugar2.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
-			,{lat:-34.4667788, lon:-58.5096329, address:'Lugar 3', tel:'1234567', web:'http://lugar3.com', logo:'cuber-logo.jpg',promo:'jkl.jpg'}
+			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 1', tel:'+1234567', web:'http://lugar1.com', logo:'cuber.jpg',promo:'promo-prueba.jpg'}
+			,{lat:-34.4667788, lon:-58.5096329, address:'Lugar 2', tel:'+1234567', web:'http://lugar2.com', logo:'cuber.jpg',promo:'promo-prueba2.jpg'}
 		]
 	};
 
@@ -174,11 +173,11 @@
 			});
 			marker.info = new google.maps.InfoWindow({
 				content: '<div class="info">'+
-					'<div class="logo" style="background-image: url(/img/logos/'+obj.logo+')"></div>'+
+					'<a class="logo" style="background-image: url(/img/logos/'+obj.logo+')" href="'+obj.web+'" target="_blank"></a>'+
 					'<p>Dirección: '+obj.address+
-					'<br/>Teléfono: '+obj.tel+
+					'<br/>Teléfono: <a href="tel:'+obj.tel+'">'+obj.tel+'</a>'+
 					'<br/>Web: <a href="'+obj.web+'" target="_blank">'+obj.web+'</a>'+
-					'<br/><a class="promo" href="/img/promos/'+obj.promo+'" target="_blank">Ver PROMO</a></p>'+
+					'<br/><a data-toggle="modal" data-target="#promos-popup" data-promo="'+obj.promo+'">Ver PROMO</a></p>'+
 				'</div>'
 			});
 			google.maps.event.addListener(marker, 'click', function() {
@@ -210,10 +209,20 @@
 			}
 			is_windowresize = false;
 		});
+
+		$(window).scroll();
 	}
 
 	// LOAD GMAP
 	google.maps.event.addDomListener(window, 'load', initialize);
+
+	// Promos
+
+	$('#map-canvas').on('click', '[data-promo]', function(e) {
+		var elem = $(e.target);
+		var popup = $(elem.data('target'));
+		popup.find('.promo').attr('src', '/img/promos/'+elem.data('promo'));
+	});
 
 	// FORM
 
@@ -250,7 +259,6 @@
         });
 			}
 		});
-		win.scroll();
 	}
 
 	//https://maps.googleapis.com/maps/api/geocode/json?address=xxx&language=es&region=ar
