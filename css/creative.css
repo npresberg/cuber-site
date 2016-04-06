@@ -79,6 +79,7 @@ p {
 
 section {
 	padding: 100px 0;
+	position: relative;
 }
 
 aside {
@@ -621,6 +622,10 @@ header .header-content .header-content-inner p {
 			margin:0;
 			display: inline-block;
 		}
+
+	#promos-popup img {
+		width: 100%;
+	}
 
 /* Contacto */
 
