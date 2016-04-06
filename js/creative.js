@@ -93,6 +93,7 @@
 			width: 28,
 			height: 31
 		},
+		geolocationThreshold: 0.3,
 		markers: [
 			{lat:-34.4778335, lon:-58.5024091, address:'Lugar 1', tel:'+1234567', web:'http://lugar1.com', logo:'cuber.jpg',promo:'promo-prueba.jpg'}
 			,{lat:-34.4667788, lon:-58.5096329, address:'Lugar 2', tel:'+1234567', web:'http://lugar2.com', logo:'cuber.jpg',promo:'promo-prueba2.jpg'}
@@ -239,7 +240,7 @@
 
 	if (navigator.geolocation) {
 		var win = $(window).scroll(function(e) {
-			if (win.scrollTop() + win.innerHeight() >= $('#mapa').offset().top) {
+			if (win.scrollTop() + win.innerHeight() >= $('#mapa').offset().top + $('#mapa').height() * config.geolocationThreshold) {
 				win.unbind('scroll');
         navigator.geolocation.getCurrentPosition(function(res) {
         	var pos = latlng(res.coords);
@@ -256,6 +257,8 @@
 						labelContent: '<span class="glyphicon glyphicon-map-marker" style="width:'+icons.width+'px;height:'+icons.height+'px"></span>',
 						labelAnchor: new google.maps.Point(icons.width/2, icons.height/2)
 					});
+
+					$('#mapa .cartel-flotante').fadeOut('slow');
         });
 			}
 		});

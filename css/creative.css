@@ -591,6 +591,15 @@ header .header-content .header-content-inner p {
 	padding: 0;
 }
 
+	#mapa .cartel-flotante {
+		position: absolute;
+		top:20px;
+		left:0;
+		background: #B10052;
+		color: #FFF;
+		padding: 0px 10px 8px 35px;
+	}
+
 	#map-canvas {
 		height: 500px;
 	}
