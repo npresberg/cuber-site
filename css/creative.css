@@ -79,7 +79,6 @@ p {
 
 section {
 	padding: 100px 0;
-	position: relative;
 }
 
 aside {
@@ -422,8 +421,8 @@ header .header-content .header-content-inner p {
 	}
 
 	#products .images {
-		width: 344px;
-		height: 344px;
+		width: 200px;
+		height: 200px;
 		position: relative;
 	}
 
