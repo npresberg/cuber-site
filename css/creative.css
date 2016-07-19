@@ -421,9 +421,11 @@ header .header-content .header-content-inner p {
 	}
 
 	#products .images {
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 250px;
 		position: relative;
+		margin: 0 auto 10px auto;
+		
 	}
 
 		#products .images img {
@@ -450,11 +452,11 @@ header .header-content .header-content-inner p {
 		}
 
 		#products .images .prev {
-			left: 10%;
+			left: 0%;
 		}
 
 		#products .images .next {
-			right: 10%;
+			right: 0%;
 		}
 
 /* Beneficios */
@@ -588,15 +590,16 @@ header .header-content .header-content-inner p {
 
 #mapa {
 	padding: 0;
+	position: relative;
 }
 
 	#mapa .cartel-flotante {
 		position: absolute;
-		top:20px;
+		top:0px;
 		left:0;
-		background: #B10052;
+		background: #A1BC31;
 		color: #FFF;
-		padding: 0px 10px 8px 35px;
+		padding: 0px 20px 8px 35px;
 	}
 
 	#map-canvas {

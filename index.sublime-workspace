@@ -1,0 +1,518 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"t",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ff",
+				"ffffff"
+			],
+			[
+				"quo",
+				"quote-fullwidth"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"BR",
+				"br"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"repea",
+				"repeat-x"
+			],
+			[
+				"ba",
+				"background-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/npresberg/Documents/etpgrafica/sendemail.php",
+		"/Users/npresberg/Documents/cuber/cuber-site/plugins.txt",
+		"/Users/npresberg/Downloads/etp-grafica/etp-grafica/index.html",
+		"/Users/npresberg/Documents/cuber/cuber-site/index.html",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/js/map-script.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/js/swap-images.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/js/script.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/js/countdown/jquery.countdown.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/js/countdown/jquery.countdown-custom-label.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/README.md",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/css/animate/animate.css",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/css/preloader.css",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/css/countdown/jquery.countdown.css",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio/CNAME",
+		"/Users/npresberg/Documents/elgorriondeparis-site/public/css/style.css",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/services.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/lib/routes.js",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/nosotras.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/thanks.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/public/sitemap.xml",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/index.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/lib/middlewares/download.js",
+		"/Users/npresberg/Documents/elgorriondeparis-site/app.js",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/includes/footer.jade",
+		"/Users/npresberg/Documents/gorrion/lib/routes.js",
+		"/Users/npresberg/Documents/gorrion/app.js",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/base/base.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/includes/topbar.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/views/project.jade",
+		"/Users/npresberg/Documents/elgorriondeparis-site/public/catalogo/bautismos/candybar/angelical/desc.md",
+		"/Users/npresberg/Documents/elgorriondeparis-site/public/catalogo/bautismos/ambientacion/angelical/desc.md",
+		"/Users/npresberg/Downloads/para nadu/feed_flights.tsv",
+		"/Users/npresberg/Downloads/para nadu/feed_hotels.tsv",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/index.html",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/css/style.css",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/js/variables.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/js/map.markers.js",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/index-video.html",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-cristian/index-countdown.html",
+		"/Users/npresberg/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/npresberg/Documents/el gorrion de paris/clientes/victoria/victoria-y-cristian/index-countdown.html",
+		"/Users/npresberg/Desktop/template/Lilac_files/scripts.js",
+		"/Users/npresberg/Desktop/template/Lilac_files/css",
+		"/Users/npresberg/Desktop/template/Lilac.html",
+		"/Users/npresberg/Desktop/template/Lilac_files/common(1).js",
+		"/Users/npresberg/Desktop/template/Lilac_files/css(1)",
+		"/Users/npresberg/Desktop/template/Wisely Themes _ Lilac_files/common(1).js",
+		"/Users/npresberg/Documents/equilibrioweb/www/index.html",
+		"/Users/npresberg/Documents/portfolio/js/site.js",
+		"/Users/npresberg/Documents/portfolio/css/style.css",
+		"/Users/npresberg/Documents/portfolio/app.js",
+		"/Users/npresberg/Documents/portfolio/index.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/css/creative.css",
+		"/Users/npresberg/Documents/equilibrioweb/www/js/creative.js",
+		"/Users/npresberg/Downloads/elgorriondeparis.com.ar.txt",
+		"/Users/npresberg/Documents/equilibrioweb/www/stretching/index.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/running/index.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/funcional/index.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/running.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/funcional.html",
+		"/Users/npresberg/Documents/equilibrioweb/www/stretching.html",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/themes/zerif-lite/presentacion-page.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/themes/zerif-lite/contactanos-page.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/themes/zerif-lite/content-contactanos.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/plugins/bootstrap-for-contact-form-7/modifications.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/plugins/bootstrap-for-contact-form-7/modules/textarea.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/plugins/bootstrap-for-contact-form-7/classes/CF7BS_Form_Field.php",
+		"/Users/npresberg/Documents/Domenica/CF7BS_Form_Field.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/themes/twentyfifteen/page.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/themes/zerif-lite/page.php",
+		"/Users/npresberg/Documents/Domenica/sitio nuevo/wp-content/themes/zerif-lite/presentacion-page.php",
+		"/Users/npresberg/Documents/Domenica/public_html/wp-content/plugins/bootstrap-for-contact-form-7/bootstrap-for-contact-form-7.php",
+		"/Users/npresberg/Documents/Domenica/sitio nuevo/wp-content/plugins/bootstrap-for-contact-form-7/classes/CF7BS_Form_Field.php",
+		"/Users/npresberg/Documents/Domenica/sitio nuevo/wordpress/wp-content/themes/zerif-lite/style.css"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/npresberg/Documents/el gorrion de paris/clientes/andre&hugh/andreyhugh-sitio,*.js,*.html",
+			"",
+			"-viejo/*,-viejo2/*,-*.po,wp-content/themes/zerif-lite",
+			"-viejo/*,-viejo2/*,-*.po",
+			"-viejo/*,-viejo2/*",
+			"-viejo/*,-viejo2/*,wp-content/plugins/bootstrap-for-contact-form-7",
+			"-viejo/*,-viejo2/*,wp-content/plugins",
+			"-viejo/*,-viejo2/*",
+			"-viejo,-viejo2",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"contacto",
+			"angle",
+			"brush",
+			"venta",
+			"CLIMA",
+			"back",
+			"rsvp",
+			"banner",
+			".banner-text.large",
+			"banner-text-with",
+			"text withlove",
+			"gif",
+			"galler",
+			"tips",
+			"tip",
+			"our",
+			"tips",
+			"gall",
+			"form ",
+			"form",
+			"markets",
+			"marker1",
+			"marker4",
+			"			\n",
+			"de-food",
+			"de-foos",
+			"bell",
+			"jquery.countdown",
+			"col-md-offset-2",
+			"hierbab",
+			"preferidos",
+			"gift",
+			"countdown",
+			"count",
+			"regionalO",
+			"custom-label",
+			"countdo",
+			"weeks",
+			"gift",
+			"opacity:",
+			"countdown-period",
+			"count",
+			"period",
+			"reception",
+			"DÓNDE HOSPEDARSE: PALERMO",
+			"col-md-offset-3 col-md-4 text-center",
+			"offset-1",
+			"<p/>",
+			"WEDDING CEREMONY",
+			"date",
+			"	\n",
+			"	",
+			" id=\"otheramount\"",
+			"regalo",
+			"map",
+			"bodega",
+			"combi",
+			"HONEY",
+			"viole",
+			"gallery",
+			"location",
+			"form",
+			"regalo",
+			"owl-carousel",
+			"bride",
+			"red",
+			"body",
+			"balloon",
+			"bodega",
+			">\n",
+			"donde hospedarse",
+			"hotel",
+			"hospedarse",
+			"days",
+			"33.776025",
+			"ceremonia",
+			"maps",
+			"lat",
+			"latitude",
+			"google.maps",
+			"google",
+			"baloon",
+			"hero",
+			"<link",
+			"gst",
+			"fontawesome",
+			"\"//",
+			"Failed to load Template Settings Panel!",
+			"alert(",
+			"alert",
+			"wiselythemes",
+			"pirate",
+			"Failed to load Template Settings Panel!",
+			"You are using a pirate copy of Lilac. Please, get a valid copy of Lilac",
+			"-chica",
+			"thumb.png\" ",
+			"thumb.jpg\" ",
+			"logo-chica",
+			"vale mazzoni make up",
+			"el gorrion de paris",
+			"jordan plas",
+			"hornero digital",
+			"<a/>",
+			"</a>",
+			"line",
+			"none",
+			"<a",
+			"sobre mi",
+			",.7);",
+			"mobile",
+			":hover",
+			"page-scroll",
+			"@media",
+			"bg",
+			"                        ",
+			"h1",
+			"{\n",
+			"15px 15",
+			"navbar",
+			"\"img/",
+			"\"font-awesome/",
+			"\"js/",
+			"\"css/",
+			"page-top",
+			"navbar",
+			"nav-bar",
+			"benefi",
+			"bg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"markers",
+			"</p>",
+			"",
+			">",
+			"thumb.png\" class=\"thumb\" ",
+			"thumb.jpg\" class=\"thumb\" ",
+			"thumb",
+			"vale-mazzoni-make-up",
+			"el-gorrion-de-paris",
+			"jordan-plas",
+			"hornero-digital",
+			"</a>",
+			"\"/img/",
+			"\"/font-awesome/",
+			"\"/js/",
+			"\"/css/",
+			"B8CD00"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"c7bs",
+				"~/Documents/Domenica/CF7BS_Form_Field.php"
+			],
+			[
+				"contactanos",
+				"public_html/wp-content/themes/zerif-lite/contactanos-page.php"
+			],
+			[
+				"prese",
+				"public_html/wp-content/themes/zerif-lite/presentacion-page.php"
+			],
+			[
+				"cb7bs_fo",
+				"sitio nuevo/wp-content/plugins/bootstrap-for-contact-form-7/classes/CF7BS_Form_Field.php"
+			],
+			[
+				"cf7bs_for",
+				"wp-content/plugins/bootstrap-for-contact-form-7/classes/CF7BS_Form_Field.php"
+			],
+			[
+				"page.php",
+				"wp-content/themes/zerif-lite/page.php"
+			],
+			[
+				"page",
+				"wp-content/themes/twentyfifteen/page.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 665.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
